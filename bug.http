@@ -1,0 +1,57 @@
+### Fetch bug list
+### Filter by txt
+get http://127.0.0.1:3030/api/bug?txt=g
+
+### Filter by txt & minSeverity
+
+get http://127.0.0.1:3030/api/bug?minSeverity=3
+
+### Sort by title
+
+get http://127.0.0.1:3030/api/bug?sortField=title
+
+### Sort by title descending
+
+get http://127.0.0.1:3030/api/bug?sortField=title&sortDir=-1
+
+### Get first page with page size=2
+
+get http://127.0.0.1:3030/api/bug?pageIdx=0&pageSize=2
+
+### Get first page with default page size
+
+get http://127.0.0.1:3030/api/bug?pageIdx=0
+
+### Get second page with default page size
+
+get http://127.0.0.1:3030/api/bug?pageIdx=1
+
+### Fetch a single bug
+
+get http://127.0.0.1:3030/api/bug/nB0zw
+
+### Delete a bug
+
+delete http://127.0.0.1:3030/api/bug/sTpWV
+
+### Add a bug
+
+post http://127.0.0.1:3030/api/bug
+content-type: application/json
+
+{
+    "title": "Having a good day",
+    "severity": 4,
+    "description": "Things be going wrong!"
+}
+### Update a bug
+
+put http://127.0.0.1:3030/api/bug/YdgUz
+content-type: application/json
+
+{
+    "_id": "YdgUz",
+    "title": "Having a realy good day",
+    "severity": 4,
+    "description": "Things be going well!"
+}

@@ -1,0 +1,15 @@
+.pagination {
+    position: fixed;
+    inset-block-end: 70px;
+    inset-inline-start: 3em;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    margin-block-start: auto;
+}
+
+.pagination :first-child {
+    outline: 1px solid lightgray;
+}

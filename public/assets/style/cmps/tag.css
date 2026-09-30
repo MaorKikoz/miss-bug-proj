@@ -1,0 +1,23 @@
+label.tag {
+    padding: .2em .4em;
+    border-radius: .2em;
+    margin: 0;
+
+    font-size: .85em;
+    cursor: pointer;
+}
+
+label.tag:has(input:checked) {
+    background-color: lightsteelblue;
+}
+
+label.tag > input {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+label.tag:has(input:focus-visible) {
+    outline: 1px solid darkblue;
+}

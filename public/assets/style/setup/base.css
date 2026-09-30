@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+button {
+    border: 0;
+    border-radius: .2em;
+    padding: .2rem .4rem;
+    background-color: var(--gray1);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+button:hover {
+    color: var(--color2);
+    background-color: black;
+}
+
+button:disabled {
+    color: gray;
+    background-color: black;
+}

@@ -1,0 +1,15 @@
+.label-chooser {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+
+    border: none;
+    padding: 0;
+    margin-block-start: .4em;
+    margin-inline: 0;
+}
+
+.label-chooser button {
+    margin-inline-start: auto;
+    font-size: 0.7em;
+}
